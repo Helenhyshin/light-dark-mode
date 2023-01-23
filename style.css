@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap");
+
 :root {
   --primary-color: rgb(255, 92, 92);
   --primary-variant: #ff2d2d;
@@ -21,11 +23,14 @@
 
 html {
   box-sizing: border-box;
+  /* when sections are selected on navbar links, scrolls smoothly */
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   color: var(--on-background);
+  font-family: Comfortaa, sans-serif;
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%233e9d96' fill-opacity='0.41' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -41,11 +46,13 @@ section {
 h1 {
   font-size: 100px;
   margin-bottom: 0;
+  font-family: Kaushan Script, sans-serif;
 }
 
 h2 {
   font-size: 32px;
   font-weight: normal;
+  color: var(--on-background-alt);
 }
 
 /* Navigation */
@@ -55,6 +62,7 @@ nav {
   /* position of fixed ensures that as user scrolls, navbar stays on top of page */
   position: fixed;
   font-size: 24px;
+  font-family: Oswald, sans-serif;
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
@@ -167,14 +175,14 @@ p {
 }
 
 /* Contact Section */
-.fab {
+.fa-brands {
   font-size: 100px;
   margin-right: 50px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
-.fab:hover {
+.fa-brands:hover {
   color: var(--on-background);
 }
 
